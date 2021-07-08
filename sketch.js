@@ -4,6 +4,9 @@ var gardenImg,rabbitImg;
 function preload(){
   gardenImg = loadImage("garden.png");
   rabbitImg = loadImage("rabbit.png");
+  appleImg = loadImage("apple.png");
+ orangeImg = loadImage("orangeLeaf.png");
+  redImg = loadImage("redImage.png"); 
 }
 
 function setup(){
@@ -23,9 +26,11 @@ rabbit.addImage(rabbitImg);
 
 function draw() {
   background(0);
-  
+
+
   edges= createEdgeSprites();
   rabbit.collide(edges);
 
   drawSprites();
+  
 }
